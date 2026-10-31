@@ -417,3 +417,37 @@ footer {
 footer a {
   color: inherit;
 }
+.install {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: var(--rain-soft);
+  border: 1px solid var(--line);
+  margin-bottom: 12px;
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+.install .i {
+  font-size: 24px;
+}
+.install b {
+  font-weight: 600;
+}
+.install > div > b {
+  display: block;
+  font-size: 14.5px;
+}
+.install span {
+  color: var(--muted);
+}
+.install .primary {
+  padding: 8px 12px;
+}
+@media (display-mode: standalone) {
+  .wrap {
+    padding-top: calc(12px + env(safe-area-inset-top));
+    padding-bottom: calc(48px + env(safe-area-inset-bottom));
+  }
+}

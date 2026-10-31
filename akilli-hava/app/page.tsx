@@ -7,6 +7,7 @@ import LocationPicker, { type Place } from '@/components/LocationPicker';
 import DayView from '@/components/DayView';
 import Hourly from '@/components/Hourly';
 import Planner from '@/components/Planner';
+import InstallHint from '@/components/InstallHint';
 
 const RainMap = dynamic(() => import('@/components/RainMap'), { ssr: false, loading: () => <div className="skeleton" /> });
 
@@ -86,6 +87,8 @@ export default function Home() {
           </button>
         )}
       </div>
+
+      <InstallHint />
 
       {picking && <LocationPicker onPick={choose} onClose={place ? () => setPicking(false) : undefined} />}
 
