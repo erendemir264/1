@@ -1,0 +1,27 @@
+{
+  "name": "akilli-hava",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "npx tsx scripts/engine-test.mts"
+  },
+  "dependencies": {
+    "leaflet": "1.9.4",
+    "next": "15.5.28",
+    "pngjs": "7.0.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/leaflet": "1.9.22",
+    "@types/node": "^22",
+    "@types/pngjs": "6.0.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9"
+  }
+}
